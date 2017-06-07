@@ -30,7 +30,7 @@
     $templatePackageDir = Join-Path $filesRoot "PackageTemplate"
     $packageDir = Join-Path $installpath $packagename
 
-    Copy-Item -Force -Recurse "$templatePackageDir\*" "$packageDir"
+    Copy-Item -Force -Recurse -Container "$templatePackageDir" "$packageDir"
 
     Get-ChildItem -Path $packageDir -File -Recurse | ForEach-Object {
         $newName = $_.Name -replace "template", $packagename
