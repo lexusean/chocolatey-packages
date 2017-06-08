@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>babun-micron</id>
+    <title>babun-micron</title>
+    <version>1.0.0</version>
+    <authors>VECTOR_TEAM</authors>
+    <owners>VECTOR_TEAM</owners>
+    <summary>This is the Micron install of Babun linux environment</summary>
+    <description></description>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
+	  <dependency id="7zip" />
+	  <dependency id="babun">
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" />
+  </files>
+</package>
